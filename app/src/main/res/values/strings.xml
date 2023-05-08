@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Frame_Layout</string>
+    <string name="detener">Detener</string>
+    <string name="iniciar">Iniciar</string>
+</resources>

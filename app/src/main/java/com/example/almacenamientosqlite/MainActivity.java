@@ -2,6 +2,7 @@ package com.example.almacenamientosqlite;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         SQLiteDatabase baseDatos = admin.getWritableDatabase();
         String codigo = et_codigo.getText().toString();
         if (!codigo.isEmpty() ){
-            Cursor fila = baseDatos.rawQuery("select descripcion, precio from articulos where codigo = "
+            @SuppressLint("Recycle") Cursor fila = baseDatos.rawQuery("select descripcion, precio from articulos where codigo = "
                     + codigo,null);
             if(fila.moveToFirst()){
                 et_descripcion.setText(fila.getString(0));

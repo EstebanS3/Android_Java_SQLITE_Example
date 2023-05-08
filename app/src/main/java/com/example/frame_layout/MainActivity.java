@@ -1,11 +1,10 @@
 package com.example.frame_layout;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.FrameLayout;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,7 +28,4 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void Detener(View vista){
-
-    }
 }

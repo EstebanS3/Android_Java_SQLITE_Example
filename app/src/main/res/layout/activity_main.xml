@@ -6,28 +6,104 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <FrameLayout
-        android:layout_width="418dp"
-        android:layout_height="452dp"
+    <EditText
+        android:id="@+id/Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/nombre"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Codigo" />
+
+    <EditText
+        android:id="@+id/Precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/precio"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nombre" />
+
+    <EditText
+        android:id="@+id/Codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/codigo"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Eliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="108dp"
+        android:hint="@string/eliminar"
+        android:onClick="eliminar"
+        android:text="@string/Eliminar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Modificar"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <Button
+        android:id="@+id/Consultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/consultar"
+        android:onClick="consultar"
+        android:text="@string/Consultar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Eliminar"
+        app:layout_constraintHorizontal_bias="0.949"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/Insertar"
+        app:layout_constraintVertical_bias="0.005" />
 
-        <Button
-            android:id="@+id/Detener"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="Variador"
-            android:text="@string/detener"
-            android:visibility="invisible" />
+    <Button
+        android:id="@+id/Insertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/insertar"
+        android:onClick="insertar"
+        android:text="@string/Insertar"
+        app:layout_constraintEnd_toStartOf="@+id/Modificar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/Iniciar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="Variador"
-            android:text="@string/iniciar"
-            android:visibility="visible" />
-    </FrameLayout>
+    <Button
+        android:id="@+id/Modificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="112dp"
+        android:hint="@string/modificar"
+        android:onClick="modificar"
+        android:text="@string/Modificar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

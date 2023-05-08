@@ -1,5 +1,17 @@
 <resources>
-    <string name="app_name">Frame_Layout</string>
-    <string name="detener">Detener</string>
-    <string name="iniciar">Iniciar</string>
+    <string name="app_name">AlmacenamientoSQLITE</string>
+    <string name="nombre">Nombre</string>
+    <string name="Nombre">Nombre</string>
+    <string name="precio">Precio</string>
+    <string name="Precio">Precio</string>
+    <string name="codigo">codigo</string>
+    <string name="Codigo">Codigo</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="Eliminar">Eliminar</string>
+    <string name="consultar">Consultar</string>
+    <string name="Consultar">Consultar</string>
+    <string name="insertar">Insertar</string>
+    <string name="modificar">Modificar</string>
+    <string name="Insertar">Insertar</string>
+    <string name="Modificar">Modificar</string>
 </resources>

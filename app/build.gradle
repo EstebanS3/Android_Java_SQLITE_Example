@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.frame_layout'
+    namespace 'com.example.almacenamientosqlite'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.frame_layout"
+        applicationId "com.example.almacenamientosqlite"
         minSdk 24
         targetSdk 33
         versionCode 1
